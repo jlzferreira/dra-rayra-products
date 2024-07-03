@@ -462,6 +462,7 @@ body {
 
     .product .popup-view{
         align-items: center;
+        padding-top: 50px;
     }
 
     .product .popup-card{

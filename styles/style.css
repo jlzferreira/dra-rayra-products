@@ -370,53 +370,19 @@ body {
 
 /* Reponsive Styles */
 
-@media (max-width: 320px){
-    .product .product-card{
-        width: 310px;
-        margin-top: 200px;
-        margin-bottom: 50px;
-        
-    }
-
-    .product .popup-card{
-        flex-direction: column;
-    }
-    
-}
-
-@media (max-width: 375px){
-    .product .product-card{
-        width: 365px;
-        margin: 0;
-        margin-top: 200px;
-        margin-bottom: 50px;
-        
-    }
-
-    .product .popup-card{
-        flex-direction: column;
-    }
-    
-}
-
-@media (max-width: 425px){
-    .product .product-card{
-        width: 415px;
-        margin: 0;
-        margin-top: 200px;
-        margin-bottom: 50px;
-        
-    }
-
-    .product .popup-card{
-        flex-direction: column;
-    }
-    
-
-}
-
 @media (max-width: 900px){
     
+    .product .product-card{
+        width: 700px;
+        margin: 0;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        
+    }
+
+    .product .popup-card{
+        flex-direction: column;
+    }
 
     .product .product-card .name{
         font-size: 18px;
@@ -436,7 +402,7 @@ body {
 
     .product .popup-card .product-img img{
         left: initial;
-        max-width: 150px;
+        max-width: 250px;
         bottom: 0;
     }
 
@@ -482,3 +448,63 @@ body {
         z-index: 4;
     }
 }
+
+@media (max-width: 600px){
+
+
+    .product .product-card{
+        width: 95vw;
+        margin: 0;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        
+    }
+
+    .product .popup-view{
+        align-items: center;
+    }
+
+    .product .popup-card{
+        flex-direction: column;
+        margin: 0px;
+        max-height: 80vh;
+        width: 95vw;
+    }
+    
+
+}
+
+
+/* @media (max-width: 375px){
+    .product .product-card{
+        width: 365px;
+        margin: 0;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        
+    }
+
+    .product .popup-card{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 320px){
+    .product .product-card{
+        width: 310px;
+        margin: 0;
+        margin-top: 200px;
+        margin-bottom: 50px;
+        
+    }
+
+    .product .popup-card{
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 20px;
+        max-height: 90vh;
+        width: 300px;
+    }
+    
+} */

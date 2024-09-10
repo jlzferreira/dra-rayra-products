@@ -32,17 +32,17 @@ closeBtns.forEach((closeBtn) => {
 // javascript for close btn
 
 
-// Adiciona um listener de evento para cada 'popup-view'
-popupViews.forEach((popupView) => {
-    popupView.addEventListener("click", () => {
-        // Remove a classe 'active' e ajusta o estilo apenas para o popup específico clicado
-        popupView.classList.remove('active');
-        popupView.style.overflowY = "hidden";
+// // Adiciona um listener de evento para cada 'popup-view'
+// popupViews.forEach((popupView) => {
+//     popupView.addEventListener("click", () => {
+//         // Remove a classe 'active' e ajusta o estilo apenas para o popup específico clicado
+//         popupView.classList.remove('active');
+//         popupView.style.overflowY = "hidden";
         
-        // Remove a classe 'noscroll' do corpo
-        document.body.classList.remove('noscroll');
-    });
-});
+//         // Remove a classe 'noscroll' do corpo
+//         document.body.classList.remove('noscroll');
+//     });
+// });
 
 
 

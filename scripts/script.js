@@ -2,6 +2,7 @@ var popupViews = document.querySelectorAll('.popup-view');
 var popupBtns = document.querySelectorAll('.popup-btn');
 var closeBtns = document.querySelectorAll('.close-btn');
  var body = document.body;
+ var menu = document.getElementsByClassName('sidebar');
 
 
 
@@ -9,6 +10,7 @@ var closeBtns = document.querySelectorAll('.close-btn');
 var popup = function(popupClick){
     popupViews[popupClick].classList.add('active');
     body.classList.add('noscroll');
+    menu[0].style.display = "none";
     // popupViews[popupClick].style.overflowY= "scroll";
 }
 
@@ -25,6 +27,7 @@ closeBtns.forEach((closeBtn) => {
             popupView.classList.remove('active');
             popupView.style.overflowY= "hidden";
             body.classList.remove('noscroll');
+            menu[0].style.display = "block";
         });
     });
 });
@@ -52,4 +55,24 @@ AOS.init({
     offset: 0, // offset (in px) from the original trigger point
     once: true, // whether animation should happen only once - while scrolling down
 
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os links da barra de navegação
+    const links = document.querySelectorAll('.nav li');
+
+    // Adiciona o evento de clique em cada link
+    links.forEach(function(link, i) {
+        link.addEventListener('click', function() {
+            // Remove a classe 'active' de todos os links
+            links.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            // Adiciona a classe 'active' ao link clicado
+            this.classList.add('active');
+            // popup(i);
+        });
+    });
 });
